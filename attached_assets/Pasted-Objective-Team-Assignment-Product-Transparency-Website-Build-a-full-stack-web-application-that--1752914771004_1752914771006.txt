@@ -1,0 +1,51 @@
+Objective
+ Team Assignment: Product Transparency Website
+ Build a full-stack web application that collects detailed information about products by asking dynamic
+ follow-up questions, stores the data, and generates a Product Transparency Report. The platform should be
+ clean, intelligent, and user-friendly.
+ Full Stack Developer Responsibilities
+ Tech Stack:- Frontend: React + TypeScript- Backend: Node.js (Express or Nest.js)- Database: PostgreSQL (or MongoDB/Firebase optional)
+ Tasks:
+ 1. Design a multi-step form to collect product data with conditional logic.
+ 2. Build APIs to store product data and fetch it.
+ 3. Create a backend module to generate a PDF report.
+ 4. Design database schema for products, questions, and reports.
+ 5. (Bonus) Add authentication for company access.
+ AI/ML Developer Responsibilities
+ Goal:
+ Make the product data collection smarter using NLP or LLM-based models.
+ Tasks:
+ 1. Generate follow-up questions using pre-trained models (BERT, T5) or LLM APIs.
+ 2. (Optional) Provide product validation or scoring logic.
+ 3. Build a Flask or FastAPI service with endpoints:
+Team Assignment: Product Transparency Website
+   - /generate-questions
+   - /transparency-score (optional)
+ 4. Collaborate with full stack devs for API integration.
+ UI/UX Designer Responsibilities
+ Goal:
+ Design an intuitive and trustworthy experience.
+ Tasks:
+ 1. Design in Figma:
+   - Landing page
+   - Multi-step submission form
+   - Report preview/download
+ 2. Add UX copy, hints, and visual feedback.
+ 3. Ensure mobile responsiveness and accessibility.
+ 4. Share Figma prototype and style guide.
+ Final Deliverables- Working full-stack application- PDF report generation from product input- AI-based dynamic question logic- Clean and functional UI
+ Folder Structure:
+ /frontend
+ /backend
+ /ai-service
+ /design
+Team Assignment: Product Transparency Website
+ README.md must include:- Setup steps- Feature list- AI API documentation- Sample product + generated report
+ Evaluation Criteria
+ | Criteria                          | Weight |
+ |----------------------------------|--------|
+ | Completion & Functionality       | 30%    |
+ | Collaboration between roles      | 20%    |
+ | Technical quality (code, logic)  | 20%    |
+ | Innovation & Smart Logic (AI)    | 15%    |
+ | UI/UX Consistency & Usability    | 15%    |
