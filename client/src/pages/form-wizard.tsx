@@ -212,12 +212,14 @@ export default function FormWizard() {
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>
-                    <SelectItem value="electronics">Electronics</SelectItem>
-                    <SelectItem value="food-beverage">Food & Beverage</SelectItem>
-                    <SelectItem value="cosmetics">Cosmetics</SelectItem>
-                    <SelectItem value="clothing">Clothing</SelectItem>
-                    <SelectItem value="home-garden">Home & Garden</SelectItem>
-                    <SelectItem value="other">Other</SelectItem>
+                    <SelectItem value="agriculture">Agriculture (Crops and Plant-Based Food Production)</SelectItem>
+                    <SelectItem value="meat-poultry">Meat & Poultry Production</SelectItem>
+                    <SelectItem value="dairy">Dairy Production</SelectItem>
+                    <SelectItem value="seafood">Seafood (Wild-Caught & Aquaculture)</SelectItem>
+                    <SelectItem value="processed-foods">Processed Foods</SelectItem>
+                    <SelectItem value="textiles-clothing">Textiles / Clothing</SelectItem>
+                    <SelectItem value="cosmetics-personal-care">Cosmetics & Personal Care</SelectItem>
+                    <SelectItem value="animal-feed">Animal Feed</SelectItem>
                   </SelectContent>
                 </Select>
                 <FormMessage />

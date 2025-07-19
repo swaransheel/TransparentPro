@@ -28,7 +28,7 @@ export async function generateQuestions(productData: {
   try {
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     
-    const prompt = `You are an expert in product transparency and sustainability assessment. Based on the following product information, generate 5-8 specific, detailed questions that would help assess the product's transparency, sustainability, and quality. The questions should be tailored to the product category and materials used.
+    const prompt = `You are an expert in product transparency and sustainability assessment across various industries including agriculture, food production, textiles, cosmetics, and animal feed. Based on the following product information, generate 5-8 specific, detailed questions that would help assess the product's transparency, sustainability, and quality. The questions should be highly tailored to the specific product category and industry standards.
 
 Product Information:
 - Name: ${productData.name}
@@ -36,6 +36,16 @@ Product Information:
 - Brand: ${productData.brand || 'Not specified'}
 - Description: ${productData.description || 'Not specified'}
 - Materials: ${productData.materials || 'Not specified'}
+
+Industry-Specific Focus Areas:
+- Agriculture: farming practices, pesticide use, soil health, water usage, organic certifications
+- Meat & Poultry: animal welfare, feed sources, antibiotics, processing methods, traceability
+- Dairy: animal treatment, feed quality, processing standards, packaging sustainability
+- Seafood: fishing methods, sustainability certifications, traceability, aquaculture practices
+- Processed Foods: ingredient sourcing, preservatives, nutritional transparency, packaging
+- Textiles/Clothing: labor conditions, material sourcing, chemical usage, waste management
+- Cosmetics & Personal Care: ingredient safety, animal testing, packaging, chemical composition
+- Animal Feed: ingredient quality, safety standards, nutritional content, contamination testing
 
 For each question, determine:
 1. The question text (should be specific and actionable)

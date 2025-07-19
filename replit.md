@@ -42,6 +42,7 @@ Preferred communication style: Simple, everyday language.
 
 ### AI Integration
 - **Question Generation**: Google Gemini AI integration for dynamic, context-aware question creation
+- **Industry-Specific Assessment**: Specialized question generation for 8 key industry categories
 - **Scoring System**: Multi-dimensional transparency scoring (overall, sustainability, quality, transparency)
 - **Content Analysis**: AI-powered insights and recommendations based on responses
 
@@ -128,3 +129,18 @@ Preferred communication style: Simple, everyday language.
 - `GET /api/products/:id/report/pdf` - PDF download endpoint
 
 The application is designed as a production-ready system with comprehensive error handling, type safety, and scalable architecture suitable for product transparency assessments across various industries.
+
+## Supported Product Categories
+
+The system provides specialized assessment frameworks for 8 key industry categories:
+
+1. **Agriculture (Crops and Plant-Based Food Production)** - Focus on farming practices, pesticide use, soil health, water usage, organic certifications
+2. **Meat & Poultry Production** - Animal welfare, feed sources, antibiotics, processing methods, traceability
+3. **Dairy Production** - Animal treatment, feed quality, processing standards, packaging sustainability
+4. **Seafood (Wild-Caught & Aquaculture)** - Fishing methods, sustainability certifications, traceability, aquaculture practices
+5. **Processed Foods** - Ingredient sourcing, preservatives, nutritional transparency, packaging
+6. **Textiles / Clothing** - Labor conditions, material sourcing, chemical usage, waste management
+7. **Cosmetics & Personal Care** - Ingredient safety, animal testing, packaging, chemical composition
+8. **Animal Feed** - Ingredient quality, safety standards, nutritional content, contamination testing
+
+Each category generates industry-specific questions tailored to relevant transparency, sustainability, and quality standards.
