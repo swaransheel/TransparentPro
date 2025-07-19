@@ -29,12 +29,22 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.post("/api/products", async (req, res) => {
     try {
       const validatedData = insertProductSchema.parse(req.body);
-      // For now, using a default userId of 1. In a real app, this would come from authentication
-      const product = await storage.createProduct({ ...validatedData, userId: 1 });
+      
+      // Ensure demo user exists, create if not
+      let demoUser = await storage.getUserByUsername('demo_user');
+      if (!demoUser) {
+        demoUser = await storage.createUser({
+          username: 'demo_user',
+          password: 'password_hash',
+          email: 'demo@example.com'
+        });
+      }
+      
+      const product = await storage.createProduct({ ...validatedData, userId: demoUser.id });
       res.status(201).json(product);
     } catch (error) {
       console.error("Error creating product:", error);
-      res.status(400).json({ message: "Invalid product data" });
+      res.status(400).json({ message: "Failed to create product: " + (error as Error).message });
     }
   });
 
